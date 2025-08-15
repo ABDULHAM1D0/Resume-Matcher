@@ -21,7 +21,7 @@ pip install spacy scikit-learn sentence-transformers python-docx PyPDF2
 ## Example:
 ```python
 from joblib import load
-model = load('cv_job_matcher_model.joblib')
+model = joblib.load("model/resume_matcher.pkl")
 similarity_score = model.predict(cv_text, job_description_text)
 print(f"Similarity Score: {similarity_score}")
 ```
