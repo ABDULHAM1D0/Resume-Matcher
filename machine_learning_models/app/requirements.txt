@@ -1,0 +1,12 @@
+scikit-learn
+pandas
+numpy
+sentence-transformers
+joblib
+streamlit
+matplotlib
+seaborn
+docx2txt
+PyPDF2
+python-docx
+pdfplumber
