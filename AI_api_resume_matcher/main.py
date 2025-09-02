@@ -39,7 +39,7 @@ if resume_file and job_text:
     Skills: <comma-separated list of skills>
     """
 
-    st.subheader("Matching..")
+    st.subheader('🔍 Matching...')
     try:
         result_dict = resume_matcher.comparing(prompt)
         st.success(f'Match Score: **{result_dict["score"]}%**')
