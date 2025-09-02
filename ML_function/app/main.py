@@ -20,7 +20,7 @@ if resume_file and job_text:
     job_features = preprocessing.taking_feature(job_text)
     print(resume_features)
     print(job_features)
-    st.subheader("Matching..")
+    st.subheader("🔍 Matching...")
     try:
         resume_vec = np.array(embedding.get_embeddings(resume_features))
         job_vec = np.array(embedding.get_embeddings(job_features))
