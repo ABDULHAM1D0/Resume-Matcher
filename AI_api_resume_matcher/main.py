@@ -42,8 +42,9 @@ if resume_file and job_text:
     st.subheader("Matching..")
     try:
         result_dict = resume_matcher.comparing(prompt)
-        st.success(result_dict["score"])
-        st.success(result_dict["skills"])
+        st.success(f'Match Score: **{result_dict["score"]}%**')
+        for skill in result_dict["skills"]:
+            st.success(skill)
     except Exception as e:
         st.error("Failed to compare")
         st.exception(e)
